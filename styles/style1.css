@@ -1,3 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI','Calibri', 'Tahoma', 'Verdana', 'Cambria', 'Geneva';
+}
+
+/*img {
+    width: 500px;
+    box-shadow: -1px 63px 35px -8px rgba(0,0,0,0.68) inset;
+}*/
+
+body {
+    margin: 0px 140px;
+}
+
+#banner1 {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    padding-left: 30px;
+}
+
+#logo {
+    width: 150px;
+    background-color: #fff;
+    border: 3px solid black;
+    position: absolute;
+    right: 250px;
+    top: 400px;
+    padding: 8px;
+}
+
+main {
+    height: 560px;
+    background-color: rgb(243, 243, 243);
+}
+
+.title-section{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+    text-align: center;
+    padding-top: 2px;
+    margin-bottom: 25px;
+}
+
+nav {
+    position: absolute;
+    height: 520px;
+    width: 220px;
+    top: 494px;
+    left: 140px;
+    background-color: rgb(153, 183, 189);
+}
+
+nav a {
+    height: 107px;
+    width: 100%;
+    background-color: rgb(153, 183, 189);
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 40px 0px 0px 30px;
+}
+
+nav a:hover {
+    background-color: rgb(121, 155, 163);
+    color: rgb(235, 235, 235);
+}
+
+.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+article {
+    width: 500px;
+    height: 90px;
+    margin-left: 350px;
+}
+
+article h4 {
+    font-size: 20px;
+    color: rgb(25, 41, 128);
+    padding-top: 15px;    
+}
+
 p {
-    color:aqua;
+    text-indent: 20px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+
+/***********ABOUT**********/
+
+.about{
+    margin-left: 350px;
+    padding-top: 17px;
+}
+
+.about h3{
+    font-size: 22px;
+    color: rgb(25, 41, 128);
+}
+
+/***********CONTACT**********/
+
+.contact{
+    margin-left: 350px;
+    padding-top: 17px;
+}
+
+.contact p{
+    padding-bottom: 18px;
+}
+
+.contact p a{
+    color: rgb(25, 41, 128);
+    text-decoration: none;
+    font-weight: bold;
 }
