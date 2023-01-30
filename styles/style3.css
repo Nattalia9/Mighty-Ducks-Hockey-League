@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'DM Sans', sans-serif;
+}
+
+header {
+    height: 638px;
+    width: 100%;
+}
+
+#banner1 {
+    width: 100%;
+    height: 558px;
+    object-fit: cover;
+    top: 80px;
+    position: relative;
+}
+
+h1 {
+    width: 390px;
+    height: 513px;
+    position: absolute;
+    top: 125px;
+    font-family: 'Staatliches', cursive;
+    font-size: 6rem;
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 78px;
+    background-color: rgba(19, 19, 19, 0.75);
+    padding: 105px 80px 60px 80px;
+    z-index: 1;
+}
+
+#logo {
+    width: 118px;
+    position: fixed;
+    left: 80px;
+    z-index: 3;
+}
+
+main {
+    height: 710px;
+    background-color: #1F2023;
+}
+
+.title-section{
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 60px;
+    margin: 0px 0px 80px 80px;
+}
+
+nav {
+    position: fixed;
+    height: 125px;
+    width: 100%;
+    top:0px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 2px 8px 32px -4px rgba(0,0,0,0.50);
+    z-index: 2;
+}
+
+nav a {
+    height: 38px;
+    width: 110px;
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(26, 25, 25);
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 5px 5px 5px;
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #fff;
+    font-weight: bold;
+    background-color: #D44B3E;
+    border-radius: 20px;
+}
+
+.active {
+    color: #D44B3E;
+    font-weight: bold;
+}
+
+.first-nav {
+    margin-left: 64rem;
+}
+
+article {
+    width: 500px;
+    height: 90px;
+    margin-left: 80px;
+}
+
+article h4 {
+    font-size: 22px;
+    color: #D44B3E;
+    padding-top: 15px;    
+}
+
+p {
+    margin-top: 10px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+/***********ABOUT**********/
+
+.about{
+    margin-left: 350px;
+    padding-top: 15px;
+    margin-left: 80px;
+}
+
+.about h3{
+    font-size: 25px;
+    color: #D44B3E;
+    padding-top: 15px;
+}
+
+/***********CONTACT**********/
+
+.contact{
+    margin-left: 350px;
+    padding-top: 15px;
+    margin-left: 80px;
+}
+
+.contact p{
+    padding-bottom: 18px;
+}
+
+.contact p a{
+    color: #D44B3E;
+    text-decoration: none;
+    font-weight: bold;
+}

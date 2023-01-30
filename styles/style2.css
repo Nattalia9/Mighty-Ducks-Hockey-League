@@ -2,13 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI','Calibri', 'Tahoma', 'Verdana', 'Cambria', 'Geneva';
+    font-family: 'Segoe UI','Calibri', 'Tahoma', sans-serif;
 }
-
-/*img {
-    width: 500px;
-    box-shadow: -1px 63px 35px -8px rgba(0,0,0,0.68) inset;
-}*/
 
 body {
     margin: 0px 140px;
