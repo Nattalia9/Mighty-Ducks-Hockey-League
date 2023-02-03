@@ -3,87 +3,50 @@
     margin: 0;
     box-sizing: border-box;
     font-family:'DM Sans', sans-serif;
+    /*outline: 1px solid red;*/
 }
 
 header {
-    height: 638px;
+    min-height: 15vh;
     width: 100%;
-}
-
-#banner1 {
-    width: 100%;
-    height: 558px;
-    object-fit: cover;
-    top: 80px;
-    position: relative;
-}
-
-h1 {
-    width: 390px;
-    height: 513px;
-    position: absolute;
-    top: 125px;
-    font-family: 'Staatliches', cursive;
-    font-size: 6rem;
-    color: white;
-    text-transform: uppercase;
-    font-style: italic;
-    line-height: 78px;
-    background-color: rgba(19, 19, 19, 0.75);
-    padding: 105px 80px 60px 80px;
-    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 6px 80px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 2px 8px 32px -4px rgba(0,0,0,0.50);
+    position: fixed;
+    z-index: 3;  
 }
 
 #logo {
     width: 118px;
-    position: fixed;
-    left: 80px;
-    z-index: 3;
+    height: auto;
+    flex-wrap: wrap;
 }
 
-main {
-    height: 710px;
-    background-color: #1F2023;
+nav .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.title-section{
-    height: 40px;
-    width: 100%;
-    color: #fff;
-    font-size: 40px;
-    font-weight: 700;
-    padding-top: 60px;
-    margin: 0px 0px 80px 80px;
+.menu li{
+    list-style: none;
 }
 
-nav {
-    position: fixed;
-    height: 125px;
-    width: 100%;
-    top:0px;
-    background-color: rgb(243, 243, 243);
-    box-shadow: 2px 8px 32px -4px rgba(0,0,0,0.50);
-    z-index: 2;
-}
-
-nav a {
-    height: 38px;
-    width: 110px;
-    display: inline-block;
+.menu li a {
     font-size: 14px;
+    text-transform: uppercase;
     color: rgb(26, 25, 25);
     text-decoration: none;
     text-align: center;
-    padding: 8px 5px 5px 5px;
-    margin-top: 60px;
-    text-transform: uppercase;
 }
 
-nav a:hover {
-    color: #fff;
+.menu li:hover a {
+    color:  #D44B3E;
     font-weight: bold;
-    background-color: #D44B3E;
-    border-radius: 20px;
 }
 
 .active {
@@ -91,14 +54,55 @@ nav a:hover {
     font-weight: bold;
 }
 
-.first-nav {
-    margin-left: 64rem;
+main {
+    min-height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1F2023;
+    padding-top: 124px;
+}
+
+.banner {
+    min-height: 513px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: star;
+    align-content: center;
+    background-image: url(../assets/img/design1_image1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 6rem;
+    color: white;
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 78px;
+    padding: 100px 80px;
+    background-color: rgba(19, 19, 19, 0.75);
+}
+
+.events {
+    width: 100%;
+    padding: 60px 80px;
+}
+
+.title-section{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
 article {
     width: 500px;
     height: 90px;
-    margin-left: 80px;
+    margin: 10px 0px;
 }
 
 article h4 {
@@ -113,12 +117,124 @@ p {
     color: #fff;
 }
 
+/***********GAME INFO**********/
+.main-game {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 40px;
+    width: 100%;
+    color: white;
+    padding: 100px 0px 20px 80px; 
+}
+
+.subtitle-game{
+    padding: 20px 0px 20px 80px;
+    color: #D44B3E;
+    width: 100%;
+}
+
+.subtitle-game p {
+    font-style: italic;
+}
+
+.all-table{
+    display: flex;
+    padding: 10px 80px 30px 80px;
+    justify-content: space-between;  
+    flex-wrap: wrap; 
+    gap: 30px;
+}    
+
+.border {
+    border: 4px solid #D44B3E;
+    min-width:300px;
+    min-height: 600px;
+    position: relative;
+    left: 300px;
+    top:0px;
+    z-index: 1;
+    /*background-color: #D44B3E;*/
+}
+
+.game-img {
+    width: 550px;
+    position: absolute;
+    z-index: 2; 
+    flex-wrap: wrap; 
+    right: 0px;
+    top: 30px;
+}
+
+.game-img img{
+    width: 100%;
+    z-index: 2;
+}
+
+table, th, td {
+   border: 2px solid #1F2023;
+   border-collapse: collapse;
+}
+
+tr {
+    padding: 5px;
+}
+
+th {
+   background-color:#D44B3E;
+   padding: 10px;
+}
+
+td {
+    background-color: #313236;
+    padding: 20px 35px;
+    color: #fff;
+}
+
+.data-game {
+    padding: 10px 0px 30px 80px;
+}
+
+.data-game a{
+    color: #D44B3E;
+    text-decoration: none;
+}
+
 /***********ABOUT**********/
 
-.about{
-    margin-left: 350px;
-    padding-top: 15px;
-    margin-left: 80px;
+.main_about {
+    min-height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1F2023;
+    padding: 194px 80px 125px 80px;
+    gap: 50px;
+    justify-content: space-between;
+    align-content: bottom;
+}
+
+.title-aboutt{
+    color: #fff;
+    font-size: 40px;
+    align-self: bottom;
+    width: 100%;
+}
+
+.gallery {
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+.gallery img{
+    width: 300px;
+}
+
+.gallery img:hover {
+    transform: scale(1.3);
+    transition: all 0.5s;
 }
 
 .about h3{
@@ -127,12 +243,48 @@ p {
     padding-top: 15px;
 }
 
+/***********RULES**********/
+
+.rules_img {
+    width: 30%;
+}
+
+.section-rules {
+    width: 70%;
+    padding: 80px 80px 20px 80px;
+    color: #fff;
+}
+
+.rules {
+    padding: 20px 0px;
+}
+
+.title-rules {
+    font-size: 40px;
+}
+
+.rules h4, dt {
+    color: #D44B3E;
+    padding-bottom: 20px;
+}
+
+.rules ol li {
+    padding-bottom: 15px;
+}
 /***********CONTACT**********/
+.main_contact {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1F2023;
+    gap: 50px;
+    align-items: center;
+}
 
 .contact{
-    margin-left: 350px;
     padding-top: 15px;
-    margin-left: 80px;
+    padding-left: 80px;
 }
 
 .contact p{
@@ -143,4 +295,26 @@ p {
     color: #D44B3E;
     text-decoration: none;
     font-weight: bold;
+}
+
+.container-img-contact{
+    height: 670px;
+    width: 986px;
+    position: relative;
+    right: 0;
+}
+
+.container-img-contact img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-img-contact:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 673px solid transparent;
+    border-left: 105px solid #1F2023;
 }
