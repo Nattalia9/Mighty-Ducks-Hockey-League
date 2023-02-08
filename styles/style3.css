@@ -6,6 +6,10 @@
     /*outline: 1px solid red;*/
 }
 
+body p{
+    color: #fff;
+}
+
 header {
     min-height: 15vh;
     width: 100%;
@@ -15,13 +19,13 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(243, 243, 243);
-    box-shadow: 2px 8px 32px -4px rgba(0,0,0,0.50);
+    box-shadow: 2px 8px 32px -4px rgba(0,0,0,0.30);
     position: fixed;
-    z-index: 3;  
+    z-index: 3; 
 }
 
 #logo {
-    width: 118px;
+    width: 100px;
     height: auto;
     flex-wrap: wrap;
 }
@@ -45,12 +49,12 @@ nav .menu {
 }
 
 .menu li:hover a {
-    color:  #D44B3E;
+    color:  #000000;
     font-weight: bold;
 }
 
-.active {
-    color: #D44B3E;
+.menu .active {
+    color: #f7793e;
     font-weight: bold;
 }
 
@@ -60,7 +64,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     background-color: #1F2023;
-    padding-top: 124px;
+    padding-top: 117px;
 }
 
 .banner {
@@ -68,7 +72,7 @@ main {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: star;
+    justify-content: start;
     align-content: center;
     background-image: url(../assets/img/design1_image1.jpg);
     background-size: cover;
@@ -88,89 +92,86 @@ h1 {
 }
 
 .events {
-    width: 100%;
-    padding: 60px 80px;
+    padding: 60px 80px 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bi-caret-right-fill {
+    color:#f7793e;
+    font-size: 14px;
+    margin-right: 8px;
 }
 
 .title-section{
+    width: 100%;
     color: #fff;
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 article {
-    width: 500px;
-    height: 90px;
+    width: 380px;
+    height: 200px;
     margin: 10px 0px;
+    padding: 8px;
 }
 
 article h4 {
-    font-size: 22px;
-    color: #D44B3E;
-    padding-top: 15px;    
+    font-size: 20px;
+    color: #f7793e;
+    padding: 10px 0px;   
+    border-bottom: 1px solid #f7793e; 
 }
 
-p {
-    margin-top: 10px;
-    padding-bottom: 30px;
+.events p {
+    margin-top: 20px;
+    padding-bottom: 10px;
     color: #fff;
 }
 
+.text {
+    color: rgb(190 190 190);
+    font-size: 14px;
+    margin-top: 15px;
+}
+
 /***********GAME INFO**********/
+
 .main-game {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .title {
     font-size: 40px;
-    width: 100%;
+    /*width: 100%;*/
     color: white;
-    padding: 100px 0px 20px 80px; 
+    padding: 90px 0px 20px 80px; 
 }
 
 .subtitle-game{
     padding: 20px 0px 20px 80px;
-    color: #D44B3E;
-    width: 100%;
+    color: #f7793e;
 }
 
 .subtitle-game p {
     font-style: italic;
 }
 
-.all-table{
-    display: flex;
-    padding: 10px 80px 30px 80px;
-    justify-content: space-between;  
-    flex-wrap: wrap; 
-    gap: 30px;
+.all-table{    
+    padding: 100px 180px 30px 80px;
 }    
 
 .border {
-    border: 4px solid #D44B3E;
+    border: 4px solid #f7793e;
     min-width:300px;
     min-height: 600px;
     position: relative;
     left: 300px;
     top:0px;
     z-index: 1;
-    /*background-color: #D44B3E;*/
-}
-
-.game-img {
-    width: 550px;
-    position: absolute;
-    z-index: 2; 
-    flex-wrap: wrap; 
-    right: 0px;
-    top: 30px;
-}
-
-.game-img img{
-    width: 100%;
-    z-index: 2;
 }
 
 table, th, td {
@@ -183,7 +184,7 @@ tr {
 }
 
 th {
-   background-color:#D44B3E;
+   background-color:#f7793e;
    padding: 10px;
 }
 
@@ -193,33 +194,43 @@ td {
     color: #fff;
 }
 
+.map {
+    padding: 0px;
+}
+
+iframe {
+    height: 90px;
+    width: 150px;
+}
+
+iframe:hover {
+    height: 140px;
+    width: 200px;
+    transition: all 1s ease 0s;
+}
+
 .data-game {
-    padding: 10px 0px 30px 80px;
+    padding: 30px 0px 30px 0px;
 }
 
 .data-game a{
-    color: #D44B3E;
+    color: #f7793e;
     text-decoration: none;
 }
 
 /***********ABOUT**********/
 
 .main_about {
-    min-height: 85vh;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #1F2023;
     padding: 194px 80px 125px 80px;
     gap: 50px;
     justify-content: space-between;
-    align-content: bottom;
+    align-content: end;
 }
 
 .title-aboutt{
     color: #fff;
     font-size: 40px;
-    align-self: bottom;
+    align-self: end;
     width: 100%;
 }
 
@@ -237,21 +248,28 @@ td {
     transition: all 0.5s;
 }
 
+.about {
+    padding-bottom: 20px;
+}
+
 .about h3{
     font-size: 25px;
-    color: #D44B3E;
-    padding-top: 15px;
+    color: #f7793e;
+    padding: 12px 0px;
 }
 
 /***********RULES**********/
-
 .rules_img {
-    width: 30%;
+    width: 500px;
+    height: 650px;
+    object-fit: contain;
+    padding-left: 80px;
+    padding-top: 10px;
 }
 
 .section-rules {
-    width: 70%;
-    padding: 80px 80px 20px 80px;
+    width: 60%;/*70*/
+    padding: 80px;
     color: #fff;
 }
 
@@ -261,25 +279,26 @@ td {
 
 .title-rules {
     font-size: 40px;
+    padding-bottom: 30px;
 }
 
 .rules h4, dt {
-    color: #D44B3E;
-    padding-bottom: 20px;
+    color: #f7793e;
+    margin-bottom: 20px;
+    justify-self: center;
+    width: 100%;
 }
 
 .rules ol li {
     padding-bottom: 15px;
 }
+
 /***********CONTACT**********/
+
 .main_contact {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #1F2023;
     gap: 50px;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .contact{
@@ -292,7 +311,7 @@ td {
 }
 
 .contact p a{
-    color: #D44B3E;
+    color: #f7793e;
     text-decoration: none;
     font-weight: bold;
 }
@@ -317,4 +336,81 @@ td {
     left: 0;
     border-bottom: 673px solid transparent;
     border-left: 105px solid #1F2023;
+}
+
+/***********REGISTER**********/
+
+.main_register{
+    padding: 145px 0px 120px 0px;
+}
+
+.title-register{
+    color:rgb(243, 243, 243);
+    padding: 50px 0px 0px 80px;
+    width: 100%;
+    font-size: 40px;
+}
+
+form {
+    padding: 48px 0px 0px 80px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+
+fieldset {
+    padding: 0.5rem;
+    border: none;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #f7793e;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+label {
+    padding: 0px 3px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 7px;
+}
+
+form h5 {
+    padding-bottom: 10px;
+}
+
+.padding-radio {
+    margin-left: 21px;
+}
+
+.btn-submit {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f7793e;
+    padding: 5px;
+    margin-top: 12px;
+    cursor: pointer; 
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: #ee4b00;
+}
+
+.hockey-text-img img{
+    width: 650px;
+    height: 600px;
+    object-fit: contain;
+    position: absolute; 
+    top: 150px;
 }
