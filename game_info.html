@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,20 +16,24 @@
 <body>
     <!-- Header -->
     <header>
-        <img src="./assets/img/Logo-Mighty-ducks.png" alt="logo" id="logo">
         <nav>
-            <ul class="menu nav-menu_visible">
+            <img src="./assets/img/Logo-Mighty-ducks.png" alt="logo" id="logo">
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+                <i class="bi bi-list"></i>
+            </label>
+            <ul class="menu">
                 <li><a href="./index.html">Home</a></li>
                 <li><a class="active" href="#">Game Info</a></li> 
                 <li><a href="./about.html">About MDHL</a></li>
                 <li><a href="./rules_policies.html">Rules</a></li>
-                <li><a href="./contact.html">Contact</a></li>
                 <li><a href="./register.html">Register</a></li> 
+                <li><a href="./contact.html">Contact</a></li> 
             </ul>
         </nav>
     </header>
     <!-- Main -->
-    <main class="main-game">
+    <main class="main-game main-max">
         <div class="text-title-game">
             <h2 class="title">Game Info</h2>
             <div class="subtitle-game">
@@ -37,6 +42,7 @@
             </div>
         </div>
         <div class="all-table">
+            <div class="table-responsive table-container">
             <table>
                 <thead>
                     <tr>
@@ -109,6 +115,7 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
             <div class="data-game">
                 <p><b>Facility Type: </b>Outdoor</p>
                 <p><b>Aditional Information: </b>If deemed necessary by MDHL games may be shortened or<br>cancelled due to extreme weather conditions.</p>
