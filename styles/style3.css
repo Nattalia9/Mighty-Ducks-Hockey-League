@@ -46,7 +46,6 @@ nav{
   padding: 0 80px;
   position: fixed; 
   background-color: rgb(243, 243, 243);
-  /* box-shadow: 2px 8px 32px -4px rgba(0,0,0,0.30); */
 }
 
 nav .menu {
@@ -134,7 +133,8 @@ nav .menu {
 		top: 102px;
 		width: 100%;
 		transition: all .5s;
-		height: 100vh;
+		/* height: 100vh; */
+    padding-bottom: 40px;
 	}
 	
 	.menu li{
@@ -145,24 +145,6 @@ nav .menu {
 	#logo {
 		left: 20px;
 		position: fixed;
-	}
-
-	.tooo{
-		width: 100%;
-		border: 2px solid red;
-		padding-right: 10px;
-	}
-
-	.hockey-text-img{
-		width: 30%;
-	}
-
-	.hockey-text-img img{
-		width: 90%;
-	}
-
-	form {
-		padding: 0;
 	}
 }
 
@@ -175,16 +157,14 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   background-color: #1F2023;
-  /* padding-top: 116px; */
 	padding-top: 103.56px;
   margin: auto;
-  /* justify-content: center; */
 }
 
 .main-max {
   min-height: 85vh;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1440px;
 }
 
 /*HOME*****/
@@ -208,7 +188,6 @@ main {
 	height: 100%;
 	width: 422px;
 	min-width: 222px;
-	/* background-color: #ee4b00; */
 	background-color: rgba(19, 19, 19, 0.75);
 	z-index: 10;
 	position: absolute;
@@ -225,23 +204,7 @@ h1 {
   font-weight: 900;
   font-style: italic;
   line-height: 78px;
-	/* top: 0; */
-  /* padding: 101px 80px; */
-  /* background-color: rgba(19, 19, 19, 0.75); */
 }
-
-/* h1 {
-  font-size: 6rem;
-  color: white;
-  font-family: 'Staatliches', cursive;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-style: italic;
-  line-height: 78px;
-	top: 0;
-  padding: 101px 80px;
-  background-color: rgba(19, 19, 19, 0.75);
-} */
 
 .events {
   padding: 60px 80px 40px 80px;
@@ -290,7 +253,6 @@ article h4 {
   margin-top: 15px;
 }
 
-
 @media only screen and (max-width: 919px) {
 	main {
 		display: block;
@@ -313,7 +275,7 @@ article h4 {
 	}
 }
 
-/***********GAME INFO**********/
+/*GAME INFO**********/
 
 .main-game {
   justify-content: space-between;
@@ -321,7 +283,6 @@ article h4 {
 
 .title {
   font-size: 40px;
-  /*width: 100%;*/
   color: white;
   padding: 90px 0px 20px 80px; 
 }
@@ -336,12 +297,18 @@ article h4 {
 }
 
 .all-table{    
-  padding: 100px 180px 30px 80px;
+  padding: 78px 80px 30px 80px;
 }    
+
+.table-container {
+  display: flex;
+  flex-basis: 500px;
+  overflow-x: scroll;
+  max-width: 100%;
+}  
 
 .border {
   border: 4px solid #f7793e;
-  min-width:300px;
   min-height: 600px;
   position: relative;
   left: 300px;
@@ -393,22 +360,29 @@ iframe:hover {
   text-decoration: none;
 }
 
-
-/*MAIN GhhhhhhhhhhhhENERAL*****/
-/* .all-table {
-  max-width: 1364px;
+@media only screen and (max-width: 1245px) {
+  .all-table{    
+    padding: 35px 80px 30px 80px;
+  } 
 }
-.table-container {
-  overflow-x: scroll;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-} 
 
-table{
-  margin: 40px 0px;
-  border-collapse: collapse;
-} */
+@media only screen and (max-width: 767.98px) {
+  .all-table{    
+    padding: 28px 30px 30px 30px;
+  }   
+  
+  .title {
+    padding: 34px 0px 20px 30px; 
+  }
+  
+  .subtitle-game{
+    padding: 20px 0px 20px 30px;
+  }
+
+  table {
+    margin-right: 30px;
+  }
+}
 
 /*ABOUT**********/
 
@@ -427,7 +401,9 @@ table{
 }
 
 .gallery {
-  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
@@ -450,17 +426,44 @@ table{
   padding: 12px 0px;
 }
 
+@media only screen and (max-width: 1223px) {
+  .gallery {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 919px) {
+  .title-aboutt {
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .main_about {
+    padding: 138px 30px 125px 30px;
+    justify-content: center;
+  }
+
+  .title-aboutt {
+    padding-bottom: 30px;
+  }
+
+  .all-about {
+    padding-top: 30px;
+  }
+}
+
 /*RULES**********/
 .rules_img {
   width: 500px;
   height: 650px;
   object-fit: contain;
-  padding-left: 80px;
-  padding-top: 10px;
+  padding-left: 14px;
+  padding-top: 30px;
 }
 
 .section-rules {
-  width: 60%;/*70*/
+  width: 60%;
   padding: 80px;
   color: #fff;
 }
@@ -472,6 +475,7 @@ table{
 .title-rules {
   font-size: 40px;
   padding-bottom: 30px;
+  padding-top: 10px;
 }
 
 .rules h4, dt {
@@ -485,37 +489,59 @@ table{
   padding-bottom: 15px;
 }
 
-/*REGISTER**********/
-/* .caja1{
-  background-color: #0f53cf;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
+@media only screen and (max-width: 1249px) {
+  .section-rules{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+  }
+
+  .main_rules {
+    display: flex;
+    align-content: center;
+    gap: 30px;
+  }
+
+  .rules_img {
+    padding-left: 0;
+  }
 }
-.caja2{
-  background-color: #7ccf0f;
-  width: 30%;
-} */
+
+@media only screen and (max-width: 530px) {
+  .rules_img {
+    width: 400px;
+    height: 550px;
+  }
+}
+
+@media only screen and (max-width: 457px) {
+  .rules_img {
+    padding: 0 20px;
+    width: 300px;
+    height: 450px;
+  }
+
+  .main_rules {
+    gap: 0px;
+  }
+}
+
+/*REGISTER**********/
 
 .tooo{
-  /* background-color: #7ccf0f; */
-  width: 50%; 
-  /* width: 100%;
-  border: 2px solid red;
-  padding-right: 10px; */
+  width: 50%;
 }
 
 .main_register{
-  /* padding: 145px 0px 120px 0px; */
-  padding: 30px 0px 120px 0px;
+  padding-bottom: 120px;
 }
 
 .title-register{
   color:rgb(243, 243, 243);
-  padding: 50px 0px 0px 80px;
-  /* width: 100%;  */
+  padding: 90px 0px 0px 85px;
   font-size: 40px;
-  /* border: 2px solid #e7520d; */
 }
 
 form {
@@ -525,9 +551,6 @@ form {
   flex-direction: column;
   gap: 1rem;
   width: 100%;
-
-  /* border: 2px solid #0fcf5f; */
-  /* padding: 0; */
 }
 
 fieldset {
@@ -578,52 +601,91 @@ form h5 {
 }
 
 .hockey-text-img{
-  width: 50%;
-  /* width: 30%; */
+  width: 50%; 
 }
 
 .hockey-text-img img{
-  width: 90%; /*650*/
-  /*height: 600px;*/
+  width: 90%;
   object-fit: contain;
-  /* border: 2px solid #0f53cf; */
+  padding-top: 60px;
 }
 
-
-/*mquery*************/
-
 @media only screen and (max-width: 991.98px) {
+  .main_register {
+    display: flex;
+    justify-content: center;
+  }
+
   .tooo{
-      /* background-color: #7ccf0f; */
       width: 100%;
-      border: 2px solid red;
       padding-right: 80px;
+      order: 1;
+  }
+
+  .title-register{
+    padding: 50px 0 0 80px;
   }
 
   .hockey-text-img{
-      width: 30%; /*650*/
+      width: 60%;
+      display: flex;
+      justify-content: center;
   }
 
   .hockey-text-img img{
-      width: 90%;
+    width: 90%;
   }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .main_register {
+    padding-top: 63.56px;
+  }
+
+	.tooo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+    padding: 0 17px;
+	}
+
+  .title-register {
+    padding-bottom: 40px;
+    text-align: start;
+    padding: 0 0 32px 0 ;
+  }
+
+	.hockey-text-img{
+		width: 70%;
+    padding-bottom: 34px;
+	}
+
+	.hockey-text-img img{
+		width: 90%;
+	}
+
+  form {
+		padding: 0;
+	} 
 }
 
 /*CONTACT**********/
 
 .main_contact {
-  gap: 50px;
   align-items: center;
-  padding-bottom: 10px;
 }
 
 .contact{
-  padding-top: 15px;
+  background-color: #1F2023;
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+  height: 87vh;
   padding-left: 80px;
-}
-
-.contact p{
-  padding-bottom: 18px;
+  justify-content: center;
 }
 
 .contact p a{
@@ -633,16 +695,14 @@ form h5 {
 }
 
 .container-img-contact{
-  height: 670px;
-  width: 986px;
+  display: flex;
+  flex: 70%;
+  height: 87vh;
+  background-image: url(../assets/img/hockey1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
-  right: 0;
-}
-
-.container-img-contact img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 .container-img-contact:before{
@@ -652,4 +712,21 @@ form h5 {
   left: 0;
   border-bottom: 673px solid transparent;
   border-left: 105px solid #1F2023;
+}
+
+@media only screen and (max-width: 919px) {
+  .contact {
+    height: 40vh;
+    align-content: center;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+
+  .container-img-contact:before {
+    display: none;
+  }
 }
